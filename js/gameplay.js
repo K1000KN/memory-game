@@ -9,7 +9,6 @@ function game() {
     let count_flips = 0;
     let z = document.getElementById('pairs');
     let count_pairs = 0;
-    let time = false;
 
     var second = 0, minute = 0; hour = 0;
     var timer = document.querySelector(".timer");
@@ -18,11 +17,13 @@ function game() {
     function flip_card() {
         if(lock_board) return;
         if (this === first_card) return;
-        if (time == false)
-            start_timer();
-        time = true;
+
         count_flips++;
         i.innerText = count_flips;
+
+        if (count_flips == 1)
+            start_timer();
+
         this.classList.add('flip');
 
         if(!has_flipped_card) {
@@ -36,11 +37,15 @@ function game() {
 
         check_match();
 
-        if (count_pairs == 1) {
-            alert("you win !");
+        if (count_pairs == 18) {
+            alert("you win " + '\n' + "with "+count_flips +" moves" + '\n' + "in " + minute + " mins " + second + " sec");
+            reset_timer();
+            i.innerText = 0;
+            z.innerText = 0;
+            count_flips = 0;
+            count_pairs = 0;
+            this.classList.remove('flip');
             game();
-            has_flipped_card = false;
-            unflip_cards();
         }
     }
 
@@ -103,6 +108,14 @@ function game() {
         },1000);
     }
 
+    function reset_timer() {
+        second = 0;
+        minute = 0;
+        hour = 0;
+        var timer = document.querySelector(".timer");
+        timer.innerHTML = "0 mins 0 secs";
+        clearInterval(interval);
+    }
     cards.forEach(card => card.addEventListener('click', flip_card));
 }
 game();

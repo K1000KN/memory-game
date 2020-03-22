@@ -6,7 +6,7 @@
 
 body {
     height: 100vh;
-    display: flex;
+
     background: #333333;
 }
 
@@ -20,7 +20,7 @@ p {
     text-align: left;
     font-size: xx-large;
     display: inline-block;
-    padding: 50px;
+    padding: 10px;
 }
 
 span {
@@ -30,8 +30,8 @@ span {
 }
 
 .game {
-    width: 640px;
-    height: 640px;
+    width: 1606px;
+    height: 879px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -39,8 +39,9 @@ span {
 }
 
 .card {
-    width: calc(25% - 10px);
-    height: calc(33.333% - 10px);
+    width: calc(11.111% - 10px);
+    height: calc(25% - 10px);
+    display: flex;
     margin: 5px;
     position: relative;
     transform: scale(1);
@@ -63,7 +64,6 @@ span {
     padding: 20px;
     position: absolute;
     border-radius: 5px;
-    background: #A9A9A9;
     backface-visibility: hidden;
 }
 
