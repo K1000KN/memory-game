@@ -13,277 +13,38 @@
   </head>
 
   <body>
+    <header>
 
-    <h1> Memory Game </h1>
+      <h1> Memory Game </h1>
 
-    <p id="first"> Flips : <span id='flips'>0</span> </p>
+      <p> choose the number of card you want :  </p>
 
-    <p id="second"> Pair founds : <span id="pairs">0</span> </p>
+      <nav>
 
-    <p class="timer"> </p>
+        <ul class="nav">
 
-    <section class="game">
+          <li> <a href="6.html">6 cartes </a> </li>
+          <li> <a href="18.html"> 18 cartes </a> </li>
+          <li> <a href="36.html"> 36 cartes </a> </li>
 
-      <div class="card" data-framework="quentin">
+        </ul>
 
-        <img class="front-face" src="../img/carteverso1.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
+      </nav>
+</br>
+</br>
 
-      </div>
+      <p> Choose the back you want : </p>
 
-      <div class="card" data-framework="quentin">
+      </br>
+      </br>
 
+        <img id="button" src="../img/carterecto1.png" />
+        <img id="button_1" src="../img/carterecto2.png" />
+        <img id="button_2" src="../img/carterecto3.png">
 
-        <img class="front-face" src="../img/carteverso1.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
+    </header>
 
-      </div>
-
-
-      <div class="card" data-framework="trump">
-
-        <img class="front-face" src="../img/carteverso2.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-
-      <div class="card" data-framework="trump">
-
-        <img class="front-face" src="../img/carteverso2.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-      <div class="card" data-framework="macron">
-
-        <img class="front-face" src="../img/carteverso3.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-      <div class="card" data-framework="macron">
-
-        <img class="front-face" src="../img/carteverso3.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-      <div class="card" data-framework="vladimir">
-
-        <img class="front-face" src="../img/carteverso4.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-      <div class="card" data-framework="vladimir">
-
-        <img class="front-face" src="../img/carteverso4.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-      <div class="card" data-framework="kim-jung">
-
-        <img class="front-face" src="../img/carteverso5.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-      <div class="card" data-framework="kim-jung">
-
-        <img class="front-face" src="../img/carteverso5.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-      <div class="card" data-framework="ricardo">
-
-        <img class="front-face" src="../img/carteverso6.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-      <div class="card" data-framework="ricardo">
-
-        <img class="front-face" src="../img/carteverso6.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-      <div class="card" data-framework="thanos">
-
-        <img class="front-face" src="../img/carteverso7.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-      <div class="card" data-framework="thanos">
-
-        <img class="front-face" src="../img/carteverso7.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-      <div class="card" data-framework="nathanael">
-
-        <img class="front-face" src="../img/carteverso8.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-      <div class="card" data-framework="nathanael">
-
-        <img class="front-face" src="../img/carteverso8.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-      <div class="card" data-framework="patrick">
-
-        <img class="front-face" src="../img/carteverso9.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-      <div class="card" data-framework="patrick">
-
-        <img class="front-face" src="../img/carteverso9.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-
-      <div class="card" data-framework="thomas">
-
-        <img class="front-face" src="../img/carteverso10.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-      <div class="card" data-framework="thomas">
-
-        <img class="front-face" src="../img/carteverso10.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-      <div class="card" data-framework="piou">
-
-        <img class="front-face" src="../img/carteverso11.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-      <div class="card" data-framework="piou">
-
-        <img class="front-face" src="../img/carteverso11.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-      <div class="card" data-framework="coronavirus">
-
-        <img class="front-face" src="../img/carteverso12.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-      <div class="card" data-framework="coronavirus">
-
-        <img class="front-face" src="../img/carteverso12.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-      <div class="card" data-framework="mask">
-
-        <img class="front-face" src="../img/carteverso13.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-      <div class="card" data-framework="mask">
-
-        <img class="front-face" src="../img/carteverso13.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-      <div class="card" data-framework="emmanuel">
-
-        <img class="front-face" src="../img/carteverso14.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-      <div class="card" data-framework="emmanuel">
-
-        <img class="front-face" src="../img/carteverso14.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-      <div class="card" data-framework="might">
-
-        <img class="front-face" src="../img/carteverso15.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-      <div class="card" data-framework="might">
-
-        <img class="front-face" src="../img/carteverso15.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-      <div class="card" data-framework="nappa">
-
-        <img class="front-face" src="../img/carteverso16.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-      <div class="card" data-framework="nappa">
-
-        <img class="front-face" src="../img/carteverso16.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-      <div class="card" data-framework="audric">
-
-
-        <img class="front-face" src="../img/carteverso17.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-      <div class="card" data-framework="audric">
-
-        <img class="front-face" src="../img/carteverso17.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-      <div class="card" data-framework="mario">
-
-        <img class="front-face" src="../img/carteverso18.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-      <div class="card" data-framework="mario">
-
-        <img class="front-face" src="../img/carteverso18.png"/>
-        <img class="back-face" src="../img/carterecto1.png"/>
-
-      </div>
-
-    </section>
-
-    <script src="../js/gameplay.js"> </script>
+    <script src="../js/script.js"> </script>
 
   </body>
 
